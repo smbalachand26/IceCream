@@ -44,6 +44,7 @@ struct IceCreamView: View {
                                     Image(currentIceCream[2])
                                         .resizable()
                                         .frame(width: 50, height: 50)
+                                        .cornerRadius(5)
                                     
                                     VStack(alignment: .leading, spacing: .leastNormalMagnitude){
                                      //The name of each ice cream store
