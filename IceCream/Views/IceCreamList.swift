@@ -19,13 +19,14 @@ struct IceCreamList: View{
     var body: some View{
         NavigationView{
             VStack{
+                //Main title at the top of the page
                 Text("Leave a review for \(iceCreamDetails[0])")
                     .bold()
                     .font(.largeTitle)
                     .foregroundColor(.black)
                     .padding(.bottom, 5)
                 
-                
+                //The components which will show up on the "add a review" screen
                         VStack{
                             HStack{
                                 Text("\(item.name)")
