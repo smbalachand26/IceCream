@@ -11,6 +11,12 @@
 		8D0DEC872A197EDF008F0E66 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0DEC862A197EDF008F0E66 /* ContentView.swift */; };
 		8D0DEC892A197EE1008F0E66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D0DEC882A197EE1008F0E66 /* Assets.xcassets */; };
 		8D0DEC8C2A197EE1008F0E66 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D0DEC8B2A197EE1008F0E66 /* Preview Assets.xcassets */; };
+		8D0DEC942A197F0B008F0E66 /* IceCreamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0DEC932A197F0B008F0E66 /* IceCreamView.swift */; };
+		8D0DEC962A197F15008F0E66 /* IceCreamDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0DEC952A197F15008F0E66 /* IceCreamDetailView.swift */; };
+		8D9B04682A1C543E003FC2F8 /* IceCreamList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9B04672A1C543E003FC2F8 /* IceCreamList.swift */; };
+		8DAA69B52A1BE1B2008760BA /* IceCreamListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAA69B42A1BE1B2008760BA /* IceCreamListView.swift */; };
+		8DAA69BA2A1BE80C008760BA /* IceCreamItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAA69B92A1BE80C008760BA /* IceCreamItem.swift */; };
+		8DAA69BC2A1BEAE1008760BA /* IceCreamViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAA69BB2A1BEAE1008760BA /* IceCreamViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		8D0DEC862A197EDF008F0E66 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8D0DEC882A197EE1008F0E66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D0DEC8B2A197EE1008F0E66 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8D0DEC932A197F0B008F0E66 /* IceCreamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCreamView.swift; sourceTree = "<group>"; };
+		8D0DEC952A197F15008F0E66 /* IceCreamDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCreamDetailView.swift; sourceTree = "<group>"; };
+		8D9B04672A1C543E003FC2F8 /* IceCreamList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCreamList.swift; sourceTree = "<group>"; };
+		8DAA69B42A1BE1B2008760BA /* IceCreamListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCreamListView.swift; sourceTree = "<group>"; };
+		8DAA69B92A1BE80C008760BA /* IceCreamItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCreamItem.swift; sourceTree = "<group>"; };
+		8DAA69BB2A1BEAE1008760BA /* IceCreamViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCreamViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +64,9 @@
 			isa = PBXGroup;
 			children = (
 				8D0DEC842A197EDF008F0E66 /* IceCreamApp.swift */,
-				8D0DEC862A197EDF008F0E66 /* ContentView.swift */,
+				8DAA69B62A1BE6A1008760BA /* ViewModels */,
+				8D0DEC972A197F1A008F0E66 /* Models */,
+				8D0DEC922A197EF7008F0E66 /* Views */,
 				8D0DEC882A197EE1008F0E66 /* Assets.xcassets */,
 				8D0DEC8A2A197EE1008F0E66 /* Preview Content */,
 			);
@@ -62,9 +76,37 @@
 		8D0DEC8A2A197EE1008F0E66 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				8D0DEC862A197EDF008F0E66 /* ContentView.swift */,
 				8D0DEC8B2A197EE1008F0E66 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8D0DEC922A197EF7008F0E66 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8D0DEC932A197F0B008F0E66 /* IceCreamView.swift */,
+				8D0DEC952A197F15008F0E66 /* IceCreamDetailView.swift */,
+				8DAA69B42A1BE1B2008760BA /* IceCreamListView.swift */,
+				8D9B04672A1C543E003FC2F8 /* IceCreamList.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8D0DEC972A197F1A008F0E66 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8DAA69B92A1BE80C008760BA /* IceCreamItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8DAA69B62A1BE6A1008760BA /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8DAA69BB2A1BEAE1008760BA /* IceCreamViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +181,12 @@
 			files = (
 				8D0DEC872A197EDF008F0E66 /* ContentView.swift in Sources */,
 				8D0DEC852A197EDF008F0E66 /* IceCreamApp.swift in Sources */,
+				8D9B04682A1C543E003FC2F8 /* IceCreamList.swift in Sources */,
+				8D0DEC962A197F15008F0E66 /* IceCreamDetailView.swift in Sources */,
+				8D0DEC942A197F0B008F0E66 /* IceCreamView.swift in Sources */,
+				8DAA69B52A1BE1B2008760BA /* IceCreamListView.swift in Sources */,
+				8DAA69BA2A1BE80C008760BA /* IceCreamItem.swift in Sources */,
+				8DAA69BC2A1BEAE1008760BA /* IceCreamViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
