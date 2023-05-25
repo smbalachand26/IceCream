@@ -12,6 +12,7 @@ struct IceCreamDetailView: View {
     @ObservedObject var viewModel = IceCreamViewModel()
     @State var showScreen = false
     var iceCreamDetails : [String]
+    let array = [1,2,3,4,5]
     
     var body: some View {
             VStack{
@@ -38,21 +39,27 @@ struct IceCreamDetailView: View {
             List{
                 ForEach(viewModel.items) {iceCream in
                     VStack{
+                        //The rating (out of 5 stars) given to the ice cream store
+                        Text("Rating: \(iceCream.rating)")
+                            .font(.title3)
+                            .multilineTextAlignment(.center)
+                        //Filter algorithm as a sub-text for the rating number
+                        ForEach(array.filter {$0 % 5 == 0}, id: \.self) {number in
+                            Text("out of \(number)")
+                        }
+                    
                         HStack{
                             //The name of the person giving the review
                             Text("Name: \(iceCream.name)")
                                 .font(.title3)
                                 .multilineTextAlignment(.center)
                                 .padding()
-                            //The rating (out of 5 stars) given to the ice cream store
-                            Text("Rating: \(iceCream.rating)")
-                                .font(.title3)
+                            
+                            //The message a user can input about the ice cream store
+                            Text("Message: \(iceCream.message)")
+                                .font(.subheadline)
                                 .multilineTextAlignment(.center)
                         }
-                        //The message a user can input about the ice cream store
-                        Text("Message: \(iceCream.message)")
-                            .font(.subheadline)
-                            .multilineTextAlignment(.center)
                     }
                 }
                 //Deletes the items on the list
@@ -62,3 +69,7 @@ struct IceCreamDetailView: View {
             .shadow(radius: 10)
         }
     }
+
+
+
+

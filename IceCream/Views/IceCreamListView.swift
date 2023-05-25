@@ -17,7 +17,6 @@ struct IceCreamListView: View{
     @ObservedObject var viewModel: IceCreamViewModel
     
     
-    
     var body: some View{
         NavigationView{
             Form{
@@ -60,7 +59,9 @@ struct IceCreamListView: View{
                         .navigationBarTitle("Add a Review")
                     }
                 }
-            }
+   
+    }
+
         
     
 

@@ -8,10 +8,10 @@
 import Foundation
 
 //Options for the dropdown for the ratings
-let ratings = ["0", "1 Star", "2 Stars", "3 Stars", "4 Stars", "5 Stars"]
+let ratings = ["0", "1 star", "2 stars", "3 stars", "4 stars", "5 stars"]
 
 //Data points which the user can add to
-struct IceCreamItem: Identifiable{
+struct IceCreamItem: Identifiable, Hashable{
     var id = UUID()
     var name: String
     var rating: String
