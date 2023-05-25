@@ -12,7 +12,7 @@ struct IceCreamDetailView: View {
     @ObservedObject var viewModel = IceCreamViewModel()
     @State var showScreen = false
     var iceCreamDetails : [String]
-    let array = [1,2,3,4,5]
+    let totalRating = [1,2,3,4,5]
     
     var body: some View {
             VStack{
@@ -44,7 +44,7 @@ struct IceCreamDetailView: View {
                             .font(.title3)
                             .multilineTextAlignment(.center)
                         //Filter algorithm as a sub-text for the rating number
-                        ForEach(array.filter {$0 % 5 == 0}, id: \.self) {number in
+                        ForEach(totalRating.filter {$0 % 5 == 0}, id: \.self) {number in
                             Text("out of \(number)")
                         }
                     
